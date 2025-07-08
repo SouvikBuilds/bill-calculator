@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (input_bill.value === '' || input_tip.value === '') {
             alert("Please Fill The Details")
         }
-        else if (parseFloat(input_bill.value) <= 0 || parseFloat(input_tip.value) <= 0) {
-            alert("Invalid Bill or Tip")
+        else if (parseFloat(input_bill.value) <= 0|| parseFloat(input_tip.value)<0) {
+            alert("Invalid Bill ")
         } else {
 
             let tip = parseFloat(input_bill.value) * (parseFloat(input_tip.value) / 100)
