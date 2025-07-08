@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please Fill The Details")
         }
         else if (parseFloat(input_bill.value) <= 0|| parseFloat(input_tip.value)<0) {
-            alert("Invalid Bill ")
+            alert("Invalid Bill or tip ")
         } else {
 
             let tip = parseFloat(input_bill.value) * (parseFloat(input_tip.value) / 100)
